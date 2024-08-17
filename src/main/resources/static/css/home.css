@@ -1,0 +1,143 @@
+
+/*подключение шрифта*/
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Bebas+Neue&family=Fjalla+One&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-size: 16px; /*размер  шрифта*/
+}
+
+body {
+    font-family: "Bakbak One", sans-serif;/*название  шрифта*/
+    font-size: 16px; /*размер  шрифта*/
+    font-weight: 400; /*жирность  шрифта*/
+    color: #000;/*цвет  шрифта*/
+    background-color:white;
+    min-width: 320px; /*мин экран*/
+}
+
+img {
+    max-width: 100%;/*ширина картинки макс*/
+    height: auto;/*высота картинки авто*/
+
+}
+
+section {
+    padding: 50px 0;/*отступ текста для секций*/
+}
+
+a {
+    color: #111;/*цвет ссылки*/
+}
+
+a:hover {
+    color: #555;/*цвет ссылки при курсоре*/
+}
+
+
+
+.carousel{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+.floating-image{/*Анимация с эфектом парения*/
+    width: 150px; /*  Размер изображения  */
+    height: 150px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform:translate(-50%,-50%);
+    animation:  float 3s ease-in-out infinite;
+   z-index: 10;
+
+}
+
+
+
+
+@keyframes float {/*Анимация с эфектом парения куда будет двигаться*/
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+
+/*Моя карточка  контейнер для фото и текстов*/
+.card-body{
+    text-align: center;
+    text-shadow:  1px 2px black ;
+    color: white;
+
+}
+.card-body .card-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+.card-body .card-text{
+    font-size: 18px;
+}
+.box {
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.img-fluid{
+    border-radius: 20px 20px  20px;
+    border: 2px solid white ;
+    height: 100%;
+}
+.video-fluid{
+    border-radius: 20px 20px  20px;
+    border: 2px solid white ;
+
+}
+/*Моя карточка  контейнер для фото и текстов*/
+
+
+
+.vid{/*видео*/
+    border-radius: 20px;
+    border: 6px solid white ;
+    position:relative;
+    overflow: hidden;
+    .vid::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        z-index: -1;
+        border-radius: 30px ;
+    }
+}
+
+
+
+
+
+
+
+
+

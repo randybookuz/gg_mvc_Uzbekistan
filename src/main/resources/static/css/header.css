@@ -1,0 +1,84 @@
+.navbar-light .navbar-nav .nav-link {/*стили ссылок*/
+    color: #111;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar-nav .dropdown-menu {/*куда должен падать меню выпад*/
+    right: 0;
+    left: auto;
+    background-color: #FFFFFF;
+
+}
+
+.top-menu li a::after {/*добавить линию при наведении курсора*/
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #111;/*его цвет*/
+    height: 1px;/*его толщина*/
+    transition: all .3s;/*плавный переход*/
+    transform: scale(0);/*по умолч не видна*/
+}
+
+.top-menu li a:hover::after {/*добавить линию при наведении курсора*/
+    transform: scale(1);/*видна делать*/
+}
+
+
+.navbar-toggler{
+    color: white;
+    z-index: 150;
+}
+@media  {
+    max-width: 768px;
+}
+.mobile-menu-collapse{
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 60%;
+    height: 40%;
+    background-color: white;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    border-radius:0 30px 30px 0;
+    border:2px solid black;
+    padding-left:  1rem;
+
+
+}
+.mobile-menu-collapse li a::after {/*добавить линию при наведении курсора*/
+    content: '';
+    display: block;
+    width: 90%;
+    background-color: black;/*его цвет*/
+    height: 1px;/*его толщина*/
+    transition: all .3s;/*плавный переход*/
+    transform: scale(0);/*по умолч не видна*/
+
+}
+.mobile-menu li a:hover::after {/*добавить линию при наведении курсора*/
+    transform: scale(1);/*видна делать*/
+}
+
+
+.mobile-menu-collapse.show{
+    transform: translateX(0);
+}
+
+
+
+
+
+
+
+.navbar-brand{      /*Название бренда*/
+    font-size:30px;  /*Размер текста*/
+    margin-left: 10px;   /*Отступ слева*/
+    color: white;
+    font-style: oblique;  /*Наклон*/
+    text-shadow: 0 5px 10px black ;  /*Тень*/
+    font-weight: 900
+}

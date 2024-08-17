@@ -1,0 +1,5 @@
+spring:
+ application:
+  name: gg_mvc_Uzbekistan
+server:
+  port: 80
